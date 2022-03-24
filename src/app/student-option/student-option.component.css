@@ -1,0 +1,27 @@
+.student-option{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.student-option-container{
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+}
+
+.student-option-text{
+    text-align: center;
+    font-size:x-large;
+    margin-top: 30px;
+}
+
+.student-option-graphic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}

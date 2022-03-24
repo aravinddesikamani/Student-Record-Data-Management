@@ -1,0 +1,10 @@
+.student-functions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+}
+
+.navbar-collapse {
+    max-height: 340px;
+}
