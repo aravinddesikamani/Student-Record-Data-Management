@@ -6,6 +6,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
 import { StudentOptionComponent } from './student-option/student-option.component';
 import { CoursesEnrolledComponent } from './courses-enrolled/courses-enrolled.component';
+import { SemestersListComponent } from './courses-enrolled/semesters-list/semesters-list.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { CoursesEnrolledComponent } from './courses-enrolled/courses-enrolled.co
     LoginPageComponent,
     StudentDashboardComponent,
     StudentOptionComponent,
-    CoursesEnrolledComponent
+    CoursesEnrolledComponent,
+    SemestersListComponent
   ],
   imports: [
     BrowserModule

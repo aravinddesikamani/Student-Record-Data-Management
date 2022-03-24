@@ -2,14 +2,17 @@
     display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .student-option-container{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     background: rgba(255, 255, 255);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    justify-items: center;
+    align-items: center;
 
 }
 
@@ -21,6 +24,9 @@
 
 .student-option-graphic{
     display: flex;
+    height: 200px;
+    width: 200px;
+    margin: auto;
     justify-content: center;
     align-items: center;
     padding-top: 30px;
