@@ -9,6 +9,8 @@ import { CoursesEnrolledComponent } from './courses-enrolled/courses-enrolled.co
 import { SemestersListComponent } from './courses-enrolled/semesters-list/semesters-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AttendanceComponent } from './attendance/attendance.component';
+import { AssessmentsComponent } from './assessments/assessments.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     StudentOptionComponent,
     CoursesEnrolledComponent,
     SemestersListComponent,
-    NavbarComponent
+    NavbarComponent,
+    AttendanceComponent,
+    AssessmentsComponent
   ],
   imports: [
     BrowserModule,
