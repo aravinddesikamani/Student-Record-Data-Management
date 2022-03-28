@@ -7,6 +7,8 @@ import { StudentDashboardComponent } from './student-dashboard/student-dashboard
 import { StudentOptionComponent } from './student-option/student-option.component';
 import { CoursesEnrolledComponent } from './courses-enrolled/courses-enrolled.component';
 import { SemestersListComponent } from './courses-enrolled/semesters-list/semesters-list.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,12 @@ import { SemestersListComponent } from './courses-enrolled/semesters-list/semest
     StudentDashboardComponent,
     StudentOptionComponent,
     CoursesEnrolledComponent,
-    SemestersListComponent
+    SemestersListComponent,
+    NavbarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
