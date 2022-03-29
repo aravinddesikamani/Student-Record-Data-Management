@@ -1,1 +1,34 @@
-<p>semesters-list works!</p>
+<div class="container">
+    <div class="accordion" id="accordionExample">
+        <table *ngFor="let semdata of data"  class="table semester-table table-striped">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col" >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/>
+                            </svg>
+                    </th>
+                    <th scope="col">
+                        Semester {{ semdata.semester }}
+                    </th>
+                    <th  scope="col" *ngIf="semdata.semester%2 === 0">
+                        Even Semester
+                    </th>
+                    <th  scope="col" *ngIf="semdata.semester%2 !== 0">
+                        Odd Semester
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="collapse show" id="{{semdata.semester}}">
+                <tr *ngFor="let course of semdata.courses" scope="row"> 
+                    <td>{{ course.courseName }}</td>
+                    <td>{{ course.faculty }}</td>
+                    <td>{{ course.attendance }}</td>
+                </tr>
+            </tbody>
+                
+        </table>
+    </div>
+    <br>
+    <br>
+</div>

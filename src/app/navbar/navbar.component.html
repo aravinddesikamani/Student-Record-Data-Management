@@ -18,8 +18,8 @@
           <a class="nav-link" routerLink="/assessment">Assessment</a>
         </li>
       </ul>
+      <span (click)="toggleLog()" class="navbar-text" id="logout">
+        {{ logString }}
+        </span>
     </div>
-    <span (click)="toggleLog()" class="navbar-text" id="logout">
-         {{ logString }}
-      </span>
   </nav>

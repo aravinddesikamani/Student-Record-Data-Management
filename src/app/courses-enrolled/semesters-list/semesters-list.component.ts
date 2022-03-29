@@ -12,4 +12,26 @@ export class SemestersListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  data = [
+    {
+      semester: 1, courses: [
+        {courseName: "Course 1", attendance: 90,faculty: "David Allen"},
+        {courseName: "Course 2", attendance: 90,faculty: "David Allen"},
+        {courseName: "Course 3", attendance: 90,faculty: "David Allen"},
+        {courseName: "Course 4", attendance: 90,faculty: "David Allen"},
+        {courseName: "Course 5", attendance: 90,faculty: "David Allen"}
+      ]
+    },{
+      semester: 2, courses: [
+        {courseName: "Course 1", attendance: 90,faculty: "David Allen"},
+        {courseName: "Course 2", attendance: 90,faculty: "David Allen"},
+        {courseName: "Course 3", attendance: 90,faculty: "David Allen"},
+        {courseName: "Course 4", attendance: 90,faculty: "David Allen"},
+        {courseName: "Course 5", attendance: 90,faculty: "David Allen"}
+      ]
+    }
+    
+    
+  ]
+
 }
