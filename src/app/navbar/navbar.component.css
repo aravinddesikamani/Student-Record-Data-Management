@@ -1,7 +1,15 @@
 #log{
-    padding-right: 40px;
+    margin-right: 10px;
 }
 
 #log:hover{
+    cursor: pointer;
+}
+
+#signup{
+    margin-right: 10px;
+}
+
+#signup:hover{
     cursor: pointer;
 }

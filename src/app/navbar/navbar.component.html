@@ -18,8 +18,11 @@
           <a class="nav-link" routerLink="/assessment">Assessment</a>
         </li>
       </ul>
-      <span routerLink="/login" class="navbar-text" id="log">
+      <div routerLink="/login" class="navbar-text" id="log">
         {{ logString }}
-      </span>
+      </div>
+      <div *ngIf="!isLoggedIn" routerLink="/signup" class="navbar-text" id="signup" >
+        Sign up
+      </div>
     </div>
   </nav>

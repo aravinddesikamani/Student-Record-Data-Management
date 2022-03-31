@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { AssessmentsComponent } from './assessments/assessments.component';
+import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AssessmentsComponent } from './assessments/assessments.component';
     SemestersListComponent,
     NavbarComponent,
     AttendanceComponent,
-    AssessmentsComponent
+    AssessmentsComponent,
+    SignUpPageComponent
   ],
   imports: [
     BrowserModule,

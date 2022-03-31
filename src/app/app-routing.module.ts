@@ -4,6 +4,7 @@ import { AssessmentsComponent } from './assessments/assessments.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { CoursesEnrolledComponent } from './courses-enrolled/courses-enrolled.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'attendance', component: AttendanceComponent},
   {path: 'assessment', component: AssessmentsComponent},
   {path: 'login', component: LoginPageComponent},
+  {path: 'signup', component:SignUpPageComponent},
   { path: '**', component: StudentDashboardComponent }
 ];
 
