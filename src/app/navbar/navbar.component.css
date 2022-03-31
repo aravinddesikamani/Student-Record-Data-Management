@@ -1,3 +1,7 @@
-#logout{
+#log{
     padding-right: 40px;
+}
+
+#log:hover{
+    cursor: pointer;
 }
