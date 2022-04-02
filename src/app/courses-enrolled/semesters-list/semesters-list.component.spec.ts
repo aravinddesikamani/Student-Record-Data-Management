@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import {MatExpansionModule} from '@angular/material/expansion';
 import { SemestersListComponent } from './semesters-list.component';
 
 describe('SemestersListComponent', () => {

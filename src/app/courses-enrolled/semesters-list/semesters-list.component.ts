@@ -11,7 +11,7 @@ export class SemestersListComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  panelOpenState = false;
   data = [
     {
       semester: 1, courses: [

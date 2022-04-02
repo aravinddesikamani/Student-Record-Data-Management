@@ -12,6 +12,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { AssessmentsComponent } from './assessments/assessments.component';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTableModule} from '@angular/material/table';
+import {MatIconModule} from '@angular/material/icon'
+
 
 @NgModule({
   declarations: [
@@ -28,7 +33,11 @@ import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatExpansionModule,
+    MatTableModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

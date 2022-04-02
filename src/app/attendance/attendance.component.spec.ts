@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { SemestersListComponent } from '../courses-enrolled/semesters-list/semesters-list.component';
 import { AttendanceComponent } from './attendance.component';
 
 describe('AttendanceComponent', () => {
