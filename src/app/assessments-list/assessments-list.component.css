@@ -1,0 +1,12 @@
+tr{
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+
+#assessment-container{
+    width: 90%;
+    max-width: 500px;
+}

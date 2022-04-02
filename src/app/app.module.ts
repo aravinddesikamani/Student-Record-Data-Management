@@ -19,7 +19,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { AttendanceCalendarComponent } from './attendance-calendar/attendance-calendar.component'
 import { FullCalendarModule } from '@fullcalendar/angular';
-import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
+import dayGridPlugin from '@fullcalendar/daygrid';
+import { AssessmentsListComponent } from './assessments-list/assessments-list.component'; // a plugin!
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin
@@ -38,7 +39,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     AttendanceComponent,
     AssessmentsComponent,
     SignUpPageComponent,
-    AttendanceCalendarComponent
+    AttendanceCalendarComponent,
+    AssessmentsListComponent
   ],
   imports: [
     BrowserModule,

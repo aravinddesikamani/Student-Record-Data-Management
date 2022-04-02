@@ -1,42 +1,38 @@
 
-<div class="container">
-    
+<div class="container" id="assessment-container">
     <div *ngFor="let semdata of data" >
         <mat-accordion>
             <mat-expansion-panel>
-              <mat-expansion-panel-header>
+                <mat-expansion-panel-header>
                 <mat-panel-title>
-                  Semester {{semdata.semester}}
+                    Semester 
                 </mat-panel-title>
                 <mat-panel-description *ngIf="semdata.semester % 2 == 0">
-                  Even Semester - {{semdata.year}}
+                    Even Semester - {{semdata.year}}
                 </mat-panel-description>
                 <mat-panel-description *ngIf="semdata.semester % 2 == 1">
                     Odd Semester - {{semdata.year}}
                 </mat-panel-description>
-              </mat-expansion-panel-header>
-              <div class="" id="{{semdata.semester}}">
-                <table class="table semester-table table-striped" >
+                </mat-expansion-panel-header>
+                <div class="" id="">
+                <table class="table semester-table" >
                     <thead class="thead-light">
                         <tr>
                             <th scope="col" >
                                     Course Name
                             </th>
                             <th scope="col">
-                                Faculty
-                            </th>
-                            <th  scope="col">
-                                Attendance
+                                Assessments
                             </th>
                         </tr>
                         
                     </thead>
                     <tbody>
                             <tr *ngFor="let course of semdata.courses">
-                                <td>{{ course.courseName }}</td>
-                                <td>{{ course.faculty }}</td>
-                                <td>{{ course.attendance }}</td>
-                                <td><a routerLink="{{course.courseName}}"><mat-icon>calendar_today</mat-icon></a></td>
+                                <td>{{course.courseName}}</td>
+                                <span *ngFor="let assessment of course.assessments" class="test-list">
+                                    <td class="test-name"*ngFor="let test of Object.keys(assessment)">{{test}}</td>
+                                </span>
                             </tr>
                             <tr>
                             </tr>
@@ -45,7 +41,7 @@
                 </table>
                 </div>
             </mat-expansion-panel>
-          </mat-accordion>
-          <br><br>
+            </mat-accordion>
+            <br><br>
     </div>
 </div>

@@ -14,7 +14,7 @@ export class SemestersListComponent implements OnInit {
   panelOpenState = false;
   data = [
     {
-      semester: 1, courses: [
+      semester: 1, year: 2022,  courses: [
         {courseName: "Course 1", attendance: 90,faculty: "David Allen"},
         {courseName: "Course 2", attendance: 90,faculty: "David Allen"},
         {courseName: "Course 3", attendance: 90,faculty: "David Allen"},
@@ -22,7 +22,7 @@ export class SemestersListComponent implements OnInit {
         {courseName: "Course 5", attendance: 90,faculty: "David Allen"}
       ]
     },{
-      semester: 2, courses: [
+      semester: 2, year: 2023, courses: [
         {courseName: "Course 1", attendance: 90,faculty: "David Allen"},
         {courseName: "Course 2", attendance: 90,faculty: "David Allen"},
         {courseName: "Course 3", attendance: 90,faculty: "David Allen"},

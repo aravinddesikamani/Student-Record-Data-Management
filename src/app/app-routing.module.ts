@@ -11,6 +11,7 @@ import { StudentDashboardComponent } from './student-dashboard/student-dashboard
 const routes: Routes = [
   { path: 'home', component: StudentDashboardComponent },
   {path: 'courses-enrolled', component: CoursesEnrolledComponent},
+  {path: 'courses-enrolled/:id', component: AttendanceCalendarComponent},
   {path: 'attendance', component: AttendanceComponent},
   {path: 'attendance/:course_name', component: AttendanceCalendarComponent},
   {path: 'assessment', component: AssessmentsComponent},
