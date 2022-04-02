@@ -15,7 +15,15 @@ import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatTableModule} from '@angular/material/table';
-import {MatIconModule} from '@angular/material/icon'
+import {MatIconModule} from '@angular/material/icon';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { AttendanceCalendarComponent } from './attendance-calendar/attendance-calendar.component'
+import { FullCalendarModule } from '@fullcalendar/angular';
+import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
+
+FullCalendarModule.registerPlugins([ // register FullCalendar plugins
+  dayGridPlugin
+]);
 
 
 @NgModule({
@@ -29,7 +37,8 @@ import {MatIconModule} from '@angular/material/icon'
     NavbarComponent,
     AttendanceComponent,
     AssessmentsComponent,
-    SignUpPageComponent
+    SignUpPageComponent,
+    AttendanceCalendarComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +46,9 @@ import {MatIconModule} from '@angular/material/icon'
     BrowserAnimationsModule,
     MatExpansionModule,
     MatTableModule,
-    MatIconModule
+    MatIconModule,
+    MatDatepickerModule,
+    FullCalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

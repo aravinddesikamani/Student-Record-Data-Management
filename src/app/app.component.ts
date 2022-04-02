@@ -1,4 +1,6 @@
 import { Component, Output } from '@angular/core';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import { CalendarOptions } from '@fullcalendar/angular'; // useful for typechecking
 
 @Component({
   selector: 'app-root',
@@ -8,5 +10,4 @@ import { Component, Output } from '@angular/core';
 export class AppComponent {
   @Output() isLoggedIn: boolean = false;
   title = 'student-data-management';
-
 }
