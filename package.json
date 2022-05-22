@@ -27,10 +27,14 @@
     "bootstrap-icons": "^1.8.1",
     "jquery": "^3.6.0",
     "ngx-bootstrap": "^8.0.0",
+    "ngx-build-plus": "^13.0.1",
     "popper": "^1.0.1",
     "popper.js": "^1.16.1",
     "rxjs": "~7.5.0",
+    "solc": "^0.8.14-fixed",
     "tslib": "^2.3.0",
+    "web3": "^1.7.3",
+    "web3modal": "^1.9.7",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

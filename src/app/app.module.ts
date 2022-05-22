@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { WinRefService } from 'src/winRefService';
 import { AppComponent } from './app.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
@@ -52,7 +52,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     MatDatepickerModule,
     FullCalendarModule
   ],
-  providers: [],
+  providers: [WinRefService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
