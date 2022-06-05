@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { StudentDataManagementService } from '../services/student-data-management.service';
+import { StudentDataManagementService } from 'src/app/services/student-data-management.service';
 @Component({
-  selector: 'app-assessments-list',
-  templateUrl: './assessments-list.component.html',
-  styleUrls: ['./assessments-list.component.css']
+  selector: 'app-attendance-list',
+  templateUrl: './attendance-list.component.html',
+  styleUrls: ['./attendance-list.component.css']
 })
-export class AssessmentsListComponent implements OnInit {
+export class AttendanceListComponent implements OnInit {
 
   constructor( private studentDataManagementService: StudentDataManagementService ) {  }
   allCoursesEnrolledDetails !: any;
@@ -26,4 +26,5 @@ export class AssessmentsListComponent implements OnInit {
 
   }
   Object = Object
+
 }

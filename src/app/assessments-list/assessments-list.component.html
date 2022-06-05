@@ -29,9 +29,9 @@
                     </thead>
                     <tbody>
                             <tr *ngFor="let course of semdata.courses">
-                                <td>{{course.courseName}}</td>
-                                <span *ngFor="let assessment of course.assessments" class="test-list">
-                                    <td class="test-name"*ngFor="let test of Object.keys(assessment)">{{test}}</td>
+                                <td>{{course[0]}}</td>
+                                <span *ngFor="let assessment of course[2]" class="test-list">
+                                    <td class="test-name">{{assessment}}</td>
                                 </span>
                             </tr>
                             <tr>

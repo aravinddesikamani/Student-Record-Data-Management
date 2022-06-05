@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="navbar-box">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" routerLink="/home">Student Dashboard</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -17,12 +18,18 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/assessment">Assessment</a>
         </li>
+        <li style="margin-left: auto;position: absolute; right: 1%"><p class="nav-link"> Logged in as {{ this.username }}</p></li>
       </ul>
-      <div routerLink="/login" class="navbar-text" id="log">
+      
+      
+      <!-- <div routerLink="/login" class="navbar-text" id="log">
         {{ logString }}
       </div>
       <div *ngIf="!isLoggedIn" routerLink="/signup" class="navbar-text" id="signup" >
         Sign up
-      </div>
+      </div> -->
     </div>
-  </nav>
+  </nav> 
+  
+</div>
+

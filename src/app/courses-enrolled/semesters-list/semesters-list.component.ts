@@ -1,37 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-
+import { StudentDataManagementService } from 'src/app/services/student-data-management.service';
 @Component({
   selector: 'app-semesters-list',
   templateUrl: './semesters-list.component.html',
   styleUrls: ['./semesters-list.component.css']
 })
 export class SemestersListComponent implements OnInit {
+  data !: any
+  constructor( private studentDataManagementService: StudentDataManagementService) { }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  async ngOnInit(){
+    let allCourseDetails!: any[];
+    await this.studentDataManagementService.getCoursesEnrolledWithDetails().then(function (_allCourseDetails ){ allCourseDetails = _allCourseDetails});
+    allCourseDetails.shift()
+    this.data = [
+      {
+        semester: 1, year: 2022,  courses: allCourseDetails
+      }
+    ]
+    console.log(this.data);
   }
   panelOpenState = false;
-  data = [
-    {
-      semester: 1, year: 2022,  courses: [
-        {courseName: "Course 1", attendance: 90,faculty: "David Allen"},
-        {courseName: "Course 2", attendance: 90,faculty: "David Allen"},
-        {courseName: "Course 3", attendance: 90,faculty: "David Allen"},
-        {courseName: "Course 4", attendance: 90,faculty: "David Allen"},
-        {courseName: "Course 5", attendance: 90,faculty: "David Allen"}
-      ]
-    },{
-      semester: 2, year: 2023, courses: [
-        {courseName: "Course 1", attendance: 90,faculty: "David Allen"},
-        {courseName: "Course 2", attendance: 90,faculty: "David Allen"},
-        {courseName: "Course 3", attendance: 90,faculty: "David Allen"},
-        {courseName: "Course 4", attendance: 90,faculty: "David Allen"},
-        {courseName: "Course 5", attendance: 90,faculty: "David Allen"}
-      ]
-    }
-    
-    
-  ]
+  
 
 }

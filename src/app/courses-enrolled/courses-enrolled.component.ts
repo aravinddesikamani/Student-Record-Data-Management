@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { StudentDataManagementService } from '../services/student-data-management.service';
 @Component({
   selector: 'app-courses-enrolled',
   templateUrl: './courses-enrolled.component.html',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoursesEnrolledComponent implements OnInit {
 
-  constructor() { }
+  constructor(private studentDataManagementService: StudentDataManagementService) { }
 
-  ngOnInit(): void {
+  async ngOnInit() {
+    let allCourseDetails;
+    await this.studentDataManagementService.getCoursesEnrolledWithDetails().then(function (_allCourseDetails ){ allCourseDetails = _allCourseDetails});
+    console.log(allCourseDetails)
   }
 
 }

@@ -13,3 +13,7 @@
 #signup:hover{
     cursor: pointer;
 }
+
+.navbar-box{
+    background-color: white;
+}

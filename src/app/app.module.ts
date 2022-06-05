@@ -20,7 +20,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { AttendanceCalendarComponent } from './attendance-calendar/attendance-calendar.component'
 import { FullCalendarModule } from '@fullcalendar/angular';
 import dayGridPlugin from '@fullcalendar/daygrid';
-import { AssessmentsListComponent } from './assessments-list/assessments-list.component'; // a plugin!
+import { AssessmentsListComponent } from './assessments-list/assessments-list.component';
+import { AttendanceListComponent } from './attendance/attendance-list/attendance-list.component'; // a plugin!
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin
@@ -40,7 +41,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     AssessmentsComponent,
     SignUpPageComponent,
     AttendanceCalendarComponent,
-    AssessmentsListComponent
+    AssessmentsListComponent,
+    AttendanceListComponent
   ],
   imports: [
     BrowserModule,

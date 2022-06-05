@@ -28,6 +28,9 @@
                             <th  scope="col">
                                 Credits
                             </th>
+                            <th  scope="col">
+                                Attendance
+                            </th>
                         </tr>
                         
                     </thead>
@@ -36,6 +39,7 @@
                                 <td>{{ course[0] }}</td>
                                 <td>David Allen</td>
                                 <td>{{ course[1] }}</td>
+                                <td>{{course[3]}} / {{course[1]*12}}</td>
                                 <td><a routerLink="{{course[0]}}"><mat-icon>calendar_today</mat-icon></a></td>
                             </tr>
                             <tr>
